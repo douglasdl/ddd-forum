@@ -1,5 +1,7 @@
 # ddd-forum
 
+## 1) DDD Fundaments
+
 - Domain-Driven Design
     - Domain: knowledge area.
       - Domain Experts
@@ -13,6 +15,42 @@
   - Entities
   - Use Cases 
 
+### Software Design and DDD
+
+### Entities and UseCases
+
+### First UseCase
+
+### Mapping the relationships
+
+### External Dependencies
+
+### Slug Value Object
+
+### Entity Base Class
+
+### Entities ID
+
+### Properties Mapping
+
+### Entities Creation Abstraction
+
+### Entities Getters and Setters
+
+### Path Aliases and Vitest Globals
+
+### DDD Glossary
+
+## 2) Forum with DDD & Clean Architecture
+
+## 3) Functional Error Handling
+
+## 4) Aggregates & Watched Lists
+
+## 5) Subdomains & Domain Events
+
+### 
+
 
 ## Project 
 
@@ -24,6 +62,7 @@ npm init -y
 Install the dependencies:
 ```sh
 npm i typescript @types/node -D
+npm i vitest -D
 ```
 
 Create the "tsconfig.json" file:
@@ -58,3 +97,7 @@ touch src/domain/entitites/question.ts
 touch src/domain/entitites/student.ts
 ```
 
+Test:
+```sh
+npx vitest run
+```
