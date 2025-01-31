@@ -29,6 +29,8 @@
 
 ### Entity Base Class
 
+
+
 ### Entities ID
 
 ### Properties Mapping
