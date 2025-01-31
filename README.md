@@ -37,9 +37,21 @@
 
 ### Entities Getters and Setters
 
+Install Day.js dependencies:
+```sh
+npm install dayjs
+```
+
 ### Path Aliases and Vitest Globals
 
-### DDD Glossary
+Install Vitest dependencies:
+```sh
+npm install vite-tsconfig-paths -D
+```
+
+### [DDD Glossary](https://efficient-sloth-d85.notion.site/Gloss-rio-DDD-3a81b4df36d348a299ccbc53f38a1665)
+
+### [Mapping the Domain](https://efficient-sloth-d85.notion.site/Atividade-Mapeando-o-dom-nio-38963358ffd74289b824ff73b187165d)
 
 ## 2) Forum with DDD & Clean Architecture
 
