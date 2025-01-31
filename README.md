@@ -53,6 +53,8 @@ npm install vite-tsconfig-paths -D
 
 ### [Mapping the Domain](https://efficient-sloth-d85.notion.site/Atividade-Mapeando-o-dom-nio-38963358ffd74289b824ff73b187165d)
 
+  -[Exercise](./MappingTheDomain.md)
+
 ## 2) Forum with DDD & Clean Architecture
 
 ## 3) Functional Error Handling
