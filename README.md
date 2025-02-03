@@ -69,6 +69,8 @@ Create the ".eslintrc.json" file:
 
 ### Clean Archtechture Fundaments
 
+![Clean Architecture](/CleanArchitecture.png "Clean Architecture")
+
 ### Folders Refactoring
 
 ### Use Case: Create Question
