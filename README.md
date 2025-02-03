@@ -57,6 +57,57 @@ npm install vite-tsconfig-paths -D
 
 ## 2) Forum with DDD & Clean Architecture
 
+### ESLint Setup
+
+Install dependencies:
+```sh
+npm i eslint @rocketseat/eslint-config -D
+npm i eslint-plugin-vitest-globals -D
+```
+
+Create the ".eslintrc.json" file:
+
+### Clean Archtechture Fundaments
+
+### Folders Refactoring
+
+### Use Case: Create Question
+
+### Tests Factories
+
+### Generating Fake Data
+
+### Use Case: Delete Question
+
+### Use Case: Delete Answer
+
+### Use Case: Edit Question
+
+### Use Case: Edit Answer
+
+### Use Case: Choose Best Answer
+
+### Use Case: List Recent Questions
+
+### Use Case: List Question's Answers
+
+### Comments Entity
+
+### Comments Base Class
+
+### Use Case: Comment in the Question
+
+### Use Case: Comment in the Answer
+
+### Use Case: Delete Comment from the Question
+
+### Use Case: Delete Comment from the Answer
+
+### Use Case: List Question's Comments 
+
+### Use Case: List Answer's Comments 
+
+
 ## 3) Functional Error Handling
 
 ## 4) Aggregates & Watched Lists

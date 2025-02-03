@@ -1,4 +1,4 @@
-import { UniqueEntityID } from "./unique-entity"
+import { UniqueEntityID } from './unique-entity'
 
 export class Entity<Props> {
   private _id: UniqueEntityID
