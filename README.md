@@ -83,6 +83,11 @@ Create the ".eslintrc.json" file:
 
 ### Generating Fake Data
 
+Install the dependencies:
+```sh
+npm i @faker-js/faker -D
+```
+
 ### Use Case: Delete Question
 
 ### Use Case: Delete Answer
