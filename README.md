@@ -121,6 +121,20 @@ npm i @faker-js/faker -D
 
 ## 3) Functional Error Handling
 
+### Error Handling Problems
+
+### Functional Error Handling
+
+- [Purify TS](https://gigobyte.github.io/purify/)
+
+### Testing Error Classes
+
+### Create Generic Errors
+
+### Refactoring the Usecases
+
+### Refactoring the Unit Tests
+
 ## 4) Aggregates & Watched Lists
 
 ## 5) Subdomains & Domain Events
