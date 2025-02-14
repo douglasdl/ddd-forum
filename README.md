@@ -106,9 +106,9 @@ npm i @faker-js/faker -D
 
 ### Comments Base Class
 
-### Use Case: Comment in the Question
+### Use Case: Comment on Question
 
-### Use Case: Comment in the Answer
+### Use Case: Comment on Answer
 
 ### Use Case: Delete Comment from the Question
 
