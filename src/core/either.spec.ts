@@ -21,6 +21,6 @@ test('Success result', () => {
 test('Error result', () => {
   const result = doSomething(false)
 
-  expect(result.isLeft).toBe(true)
-  expect(result.isRight).toBe(false)
+  expect(result.isLeft()).toBe(true)
+  expect(result.isRight()).toBe(false)
 })
