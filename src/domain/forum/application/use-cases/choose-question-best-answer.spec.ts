@@ -4,12 +4,13 @@ import { UniqueEntityID } from '@/core/entities/unique-entity'
 import { InMemoryQuestionsRepository } from 'test/repositories/in-memory-questions-repository'
 import { ChooseQuestionBestAnswerUseCase } from './choose-question-best-answer'
 import { makeQuestion } from 'test/factories/make-question'
+import { NotAllowedError } from '@/domain/forum/application/use-cases/errors/not-allowed-error'
 
 let inMemoryQuestionsRepository: InMemoryQuestionsRepository
 let inMemoryAnswersRepository: InMemoryAnswersRepository
 let sut: ChooseQuestionBestAnswerUseCase // sut = System Under Test
 
-describe('Choose Question Best Answer', async () => {
+describe('Choose Question Best Answer', () => {
   beforeEach(() => {
     inMemoryQuestionsRepository = new InMemoryQuestionsRepository()
     inMemoryAnswersRepository = new InMemoryAnswersRepository()
@@ -22,6 +23,7 @@ describe('Choose Question Best Answer', async () => {
 
   it('should be able to choose the question best answer', async () => {
     const question = makeQuestion()
+
     const answer = makeAnswer({
       questionId: question.id
     })
@@ -41,6 +43,7 @@ describe('Choose Question Best Answer', async () => {
     const question = makeQuestion({
       authorId: new UniqueEntityID('author-1')
     })
+    
     const answer = makeAnswer({
       questionId: question.id
     })
@@ -48,11 +51,15 @@ describe('Choose Question Best Answer', async () => {
     await inMemoryQuestionsRepository.create(question)
     await inMemoryAnswersRepository.create(answer)
 
-    expect(async () => {
-      return await sut.execute({
-        authorId: answer.id.toString(),
-        answerId: 'answer-2'
-      })
-    }).rejects.toBeInstanceOf(Error)
+    await inMemoryQuestionsRepository.create(question)
+    await inMemoryAnswersRepository.create(answer)
+
+    const result = await sut.execute({
+      answerId: answer.id.toString(),
+      authorId: 'author-2',
+    })
+
+    expect(result.isLeft()).toBe(true)
+    expect(result.value).toBeInstanceOf(NotAllowedError)
   })
 })
