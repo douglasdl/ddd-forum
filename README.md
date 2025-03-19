@@ -137,6 +137,48 @@ npm i @faker-js/faker -D
 
 ## 4) Aggregates & Watched Lists
 
+### Aggregates & Watched Lists
+
+#### Concepts
+- Aggregate
+- WatchedList
+
+#### Example
+- Order → OrderItem[]
+- Order → Shipping
+
+- Question → Attachment[]
+
+#### Creation
+
+- Title
+- Content
+- Attachments
+
+#### Edition
+
+- Title
+- Content
+
+- Add new Attachment (create)
+- Remove Previous Attachments (delete)
+- Edit Existent Atachments (update)
+
+### AggregateRoot base Class
+
+### Create Question with Atachments
+
+### Pattern: WatchedList
+
+### Edit a Questions with Attachments
+
+### Question Edition Test
+
+### Delete Question Attachments
+
+### Answers Attachments
+
+
 ## 5) Subdomains & Domain Events
 
 ### 
