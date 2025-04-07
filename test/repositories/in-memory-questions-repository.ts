@@ -1,6 +1,6 @@
-import { PaginationParams } from "@/core/repositories/pagination-params";
-import { QuestionsRepository } from "@/domain/forum/application/repositories/questions-repository";
-import { Question } from "@/domain/forum/enterprise/entitites/question";
+import type { PaginationParams } from "@/core/repositories/pagination-params"
+import type { QuestionsRepository } from "@/domain/forum/application/repositories/questions-repository"
+import type { Question } from "@/domain/forum/enterprise/entitites/question"
 
 export class InMemoryQuestionsRepository implements QuestionsRepository {
   public items: Question[] = []
