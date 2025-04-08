@@ -185,7 +185,46 @@ npx tsc --noEmit
 
 ## 5) Subdomains & Domain Events
 
-### 
+### Subdomains Fundamentals
+
+- Core: what makes money.
+- Supporting: give support to the core keep working.
+- Generic: needed but not so important.
+
+#### Examples
+##### Core
+- Purchase
+- Catalog
+- Payment
+- Deliver
+
+##### Supporting
+- Stock
+
+##### Generic
+- Client Notifcations
+- Promotions
+- Chat
+
+### Notification Entity
+
+### Send Notification UseCase
+
+### Read Notification UseCase
+
+### Domain Events Flow
+
+### Domain Events Structure
+
+### Domain Events Tests
+
+### Create Answer Response
+
+### Listen a Domain Event
+
+### Send Notification in the subdomain
+
+### Best Answer Flow
 
 
 ## Project 
