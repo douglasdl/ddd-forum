@@ -2,4 +2,5 @@ import type { QuestionAttachment } from "../../enterprise/entitites/question-att
 
 export interface QuestionAttachmentsRepository {
   findManyByQuestionId(questionId: string): Promise<QuestionAttachment[]>
+  deleteManyByQuestionId(questionId: string): Promise<void>
 }
