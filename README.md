@@ -178,6 +178,10 @@ npm i @faker-js/faker -D
 
 ### Answers Attachments
 
+Check Typescripty errors:
+```sh
+npx tsc --noEmit
+```
 
 ## 5) Subdomains & Domain Events
 

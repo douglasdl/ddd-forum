@@ -12,8 +12,8 @@ let sut: EditQuestionUseCase // sut = System Under Test
 
 describe('Edit Question', async () => {
   beforeEach(() => {
-    inMemoryQuestionsRepository = new InMemoryQuestionsRepository()
     inMemoryQuestionAttachmentsRepository = new InMemoryQuestionAttachmentsRepository()
+    inMemoryQuestionsRepository = new InMemoryQuestionsRepository(inMemoryQuestionAttachmentsRepository)
     sut = new EditQuestionUseCase(
       inMemoryQuestionsRepository, 
       inMemoryQuestionAttachmentsRepository
