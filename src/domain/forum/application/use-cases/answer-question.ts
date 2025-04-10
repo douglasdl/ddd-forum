@@ -1,4 +1,4 @@
-import { UniqueEntityID } from '@/core/entities/unique-entity'
+import { UniqueEntityID } from '@/core/entities/unique-entity-id'
 import { Answer } from '../../enterprise/entitites/answer'
 import type { AnswersRepository } from '../repositories/answers-repository'
 import { right, type Either } from '@/core/either'

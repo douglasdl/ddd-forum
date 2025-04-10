@@ -1,7 +1,7 @@
 import { InMemoryAnswerCommentsRepository } from 'test/repositories/in-memory-answer-comments-repository'
 import { FetchAnswerCommentsUseCase } from './fetch-answer-comments'
 import { makeAnswerComment } from 'test/factories/make-answer-comment'
-import { UniqueEntityID } from '@/core/entities/unique-entity'
+import { UniqueEntityID } from '@/core/entities/unique-entity-id'
 
 let inMemoryAnswerCommentsRepository: InMemoryAnswerCommentsRepository
 let sut: FetchAnswerCommentsUseCase // sut = System Under Test

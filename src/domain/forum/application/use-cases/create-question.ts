@@ -1,6 +1,6 @@
 import { Question } from '@/domain/forum/enterprise/entitites/question'
 import type { QuestionsRepository } from '../repositories/questions-repository'
-import { UniqueEntityID } from '@/core/entities/unique-entity'
+import { UniqueEntityID } from '@/core/entities/unique-entity-id'
 import { right, type Either } from '@/core/either'
 import { QuestionAttachment } from '@/domain/forum/enterprise/entitites/question-attachment'
 import { QuestionAttachmentList } from '../../enterprise/entitites/question-attachment-list'

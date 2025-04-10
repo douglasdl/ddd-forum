@@ -1,4 +1,4 @@
-import { UniqueEntityID } from '@/core/entities/unique-entity'
+import { UniqueEntityID } from '@/core/entities/unique-entity-id'
 import type { AnswersRepository } from '../repositories/answers-repository'
 import { AnswerComment } from '../../enterprise/entitites/answer-comment'
 import type { AnswerCommentsRepository } from '../repositories/answer-comments-repository'
